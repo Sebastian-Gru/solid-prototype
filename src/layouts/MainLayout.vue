@@ -82,8 +82,11 @@ export default {
   methods: {
 
   },
-  beforeUpdate() {
-    this.$q.dark.set(this.darkmode == null ? "auto" : this.darkmode);
-  },
+    created() {
+        this.$q.dark.set(this.darkmode == null? 'auto' : this.darkmode) // or false or "auto"
+    },
+    beforeUpdate() {
+        this.$q.dark.set(this.darkmode == null? 'auto' : this.darkmode) // or false or "auto"
+    }
 };
 </script>
