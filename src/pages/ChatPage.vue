@@ -21,6 +21,7 @@
             ref="newMessage"
             :bg-color="this.$q.dark.isActive ? 'dark grey' : 'white'"
             outlined
+            autofocus
             rounded
             label="Message"
             dense
